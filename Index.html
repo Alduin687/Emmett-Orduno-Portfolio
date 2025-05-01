@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #000, #4b0082);
+      color: #fff;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .left-section {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .header {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-start;
+    }
+
+    .header-box {
+      width: 100px;
+      height: 50px;
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    .main-content {
+      flex: 1;
+      background-color: #333;
+      border-radius: 10px;
+    }
+
+    .right-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-color: #555;
+      border-radius: 50%;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .menu button {
+      width: 120px;
+      padding: 10px;
+      background-color: #d4a373;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .menu button.active {
+      background-color: #007bff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Section -->
+    <div class="left-section">
+      <!-- Header -->
+      <div class="header">
+        <div class="header-box"></div>
+        <div class="header-box"></div>
+        <div class="header-box"></div>
+      </div>
+      <!-- Main Content -->
+      <div class="main-content"></div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <!-- Logo -->
+      <div class="logo"></div>
+      <!-- Menu -->
+      <div class="menu">
+        <button>Personal</button>
+        <button class="active">Trion</button>
+        <button>Darksun</button>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .section {
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px;
+    }
+
+    .trion-section {
+      background: linear-gradient(to bottom, #4b0082, #000);
+      border: 2px solid #007bff;
+    }
+
+    .darksun-section {
+      background: linear-gradient(to bottom, #28a745, #000);
+      border: 2px solid #28a745;
+    }
+
+    .section-title {
+      text-align: center;
+      padding: 10px;
+      color: white;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .trion-title {
+      background-color: #007bff;
+    }
+
+    .darksun-title {
+      background-color: #28a745;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      width: 100px;
+      height: 50px;
+      background-color: #333;
+      border: 2px solid #007bff;
+      border-radius: 5px;
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      background-color: #555;
+      border: 2px solid #007bff;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+
+    .darksun-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .darksun-box {
+      flex: 1;
+      height: 100px;
+      background-color: #ccc;
+      border: 2px solid #28a745;
+      border-radius: 5px;
+    }
+
+    .darksun-icon {
+      width: 80px;
+      height: 80px;
+      background-color: #555;
+      border: 2px solid #28a745;
+      border-radius: 50%;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Trion Section -->
+  <div class="section trion-section">
+    <div class="section-title trion-title">Trion</div>
+    <div class="cards-container">
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="icon"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card" style="width: 220px;"></div>
+    </div>
+  </div>
+
+  <!-- Darksun Section -->
+  <div class="section darksun-section">
+    <div class="section-title darksun-title">Darksun</div>
+    <div class="darksun-row">
+      <div class="darksun-box"></div>
+      <div class="darksun-icon"></div>
+      <div class="darksun-box"></div>
+    </div>
+  </div>
+
+</body>
+</html>
