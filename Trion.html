@@ -1,11 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trion</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trion Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 10px 20px;
+      background-color: #333;
+    }
+
+    .header .menu {
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-box {
+      width: 100px;
+      height: 50px;
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      background-color: #555;
+      border-radius: 50%;
+    }
+
+    .hero {
+      width: 100%;
+      height: 300px;
+      background-color: #4b0082;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .section-title {
+      margin-top: -20px;
+      text-align: center;
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      width: 150px;
+    }
+
+    .content {
+      width: 90%;
+      background-color: #ccc;
+      border: 2px solid #007bff;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .content-line {
+      height: 15px;
+      background-color: #6a0dad;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    .content-line.short {
+      width: 30%;
+    }
+
+    .content-line.medium {
+      width: 70%;
+    }
+
+    .footer {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #007bff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .footer-box {
+      width: 30%;
+      height: 50px;
+      background-color: #4b0082;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="menu">
+        <div class="header-box"></div>
+        <div class="header-box"></div>
+        <div class="header-box"></div>
+      </div>
+      <div class="logo"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero"></div>
+    <div class="section-title">Trion</div>
+
+    <!-- Content Section -->
+    <div class="content">
+      <div class="content-line short"></div>
+      <div class="content-line"></div>
+      <div class="content-line"></div>
+      <div class="content-line"></div>
+      <div class="content-line"></div>
+      <div class="content-line"></div>
+      <div class="content-line"></div>
+      <div class="content-line medium"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class="footer-box"></div>
+      <div class="footer-box"></div>
+    </div>
+  </div>
 </body>
 </html>
